@@ -1,10 +1,21 @@
 <footer>
-    <div id="copyright" class="container">
-        <p th:utext="#{copyright}"></p>
-        <p>Powered by <a href="http://www.apereo.org/cas">
-            Apereo Central Authentication Service
+    <div id="copyright" class="container" style="padding-top: 40px; padding-bottom: 40px; margin-top: 40px; border-top: 1px solid #eee;">
+        <!-- <p th:utext="#{copyright}"></p>
+        	<p>Powered by <a href="https://yair.jd.com">
+            YAIR Team
             <span th:text="${T(org.apereo.cas.util.CasVersion).getVersion()}"></span>
-            <span th:text="${T(org.apereo.cas.util.CasVersion).getDateTime()}"></span> </a>
-        </p>
+            <span th:text="${T(org.apereo.cas.util.CasVersion).getDateTime()}"></span> 
+            </a>
+        </p> -->
+        
+        <div class="row">
+        	<div class="pull-left">
+        		<p th:utext="#{copyright}">
+        	</div>
+        	
+        	<div class="pull-right">
+        		Powered by <a href="https://yair.jd.com"> YAIR Team </a>
+        	</div>
+        </div>
     </div>
 </footer>
